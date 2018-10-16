@@ -49,7 +49,7 @@ module.exports = {
 	// and will honor the `X-Forwarded-For` header.
 	//
 	// This value is set to `false` by default.
-	reverseProxy: true,
+	reverseProxy: false,
 
 	// ### `maxHistory`
 	//
@@ -109,7 +109,7 @@ module.exports = {
 	// from URLs posted in channels and private messages.
 	//
 	// This value is set to `false` by default.
-	prefetch: true,
+	prefetch: false,
 
 	// ### `prefetchStorage`
 
@@ -129,7 +129,7 @@ module.exports = {
 	// restarts.
 	//
 	// This value is set to `false` by default.
-	prefetchStorage: true,
+	prefetchStorage: false,
 
 	// ### `prefetchMaxImageSize`
 	//
@@ -219,16 +219,16 @@ module.exports = {
 	// }
 	// ```
 	defaults: {
-		name: "UriIRC",
-		host: "znc",
+		name: "Freenode",
+		host: "chat.freenode.net",
 		port: 6697,
 		password: "",
 		tls: true,
-		rejectUnauthorized: false,
-		nick: "pbzweihander",
-		username: "pbzweihander/UriIRC",
-		realname: "pbzweihander",
-		join: "",
+		rejectUnauthorized: true,
+		nick: "thelounge%%",
+		username: "thelounge",
+		realname: "The Lounge User",
+		join: "#thelounge",
 	},
 
 	// ### `displayNetwork`
